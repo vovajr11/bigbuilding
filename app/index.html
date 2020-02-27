@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee|Roboto:400,500,700,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="box__header">
+          <div class="header__body">
+            <a href="#" class="header__logo">bigbuilding</a>
+            <div class="header__burger">
+              <span> </span>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__list">
+                <li>
+                  <a href="#" class="header__link">Головна</a>
+                </li>
+                <li>
+                  <a href="#About-us" class="header__link">Про Нас</a>
+                </li>
+                <li>
+                  <a href="#Team" class="header__link">Команда</a>
+                </li>
+                <li>
+                  <a href="#Services" class="header__link">Послуги</a>
+                </li>
+                <li>
+                  <a href="#Contact" class="header__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <div id="slider" class="slider">
+        <ol class="slider_indicators">
+          <li
+            class="slider_indicator slider_indicator_active"
+            data-slide-to="0"
+          ></li>
+          <li class="slider_indicator" data-slide-to="1"></li>
+          <li class="slider_indicator" data-slide-to="2"></li>
+          <li class="slider_indicator" data-slide-to="3"></li>
+        </ol>
+        <div class="slider_items">
+          <div class="slider_item slider_item_1 slider_item_active">
+            <div class="slider_text">
+              <h1>Заголовок h1 слайду №1</h1>
+              <h2>Підзаголовок h2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur suscipit ut repudiandae a exercitationem
+                reprehenderit?
+              </p>
+            </div>
+            <img src="./img/1.png" alt="slide1" />
+          </div>
+          <div class="slider_item slider_item_2">
+            <div class="slider_text">
+              <h1>Заголовок h1 слайду №2</h1>
+              <h2>Підзаголовок h2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur suscipit ut repudiandae a exercitationem
+                reprehenderit?
+              </p>
+            </div>
+            <img src="./img/2.png" alt="slide1" />
+          </div>
+          <div class="slider_item slider_item_3">
+            <div class="slider_text">
+              <h1>Заголовок h1 слайду №3</h1>
+              <h2>Підзаголовок h2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur suscipit ut repudiandae a exercitationem
+                reprehenderit?
+              </p>
+            </div>
+            <img src="./img/3.png" alt="slide1" />
+          </div>
+          <div class="slider_item slider_item_4">
+            <div class="slider_text">
+              <h1>Заголовок h1 слайду №4</h1>
+              <h2>Підзаголовок h2</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur suscipit ut repudiandae a exercitationem
+                reprehenderit?
+              </p>
+            </div>
+            <img src="./img/4.png" alt="slide1" />
+          </div>
+        </div>
+        <a
+          class="slider_control slider_control_prev"
+          href="#"
+          role="button"
+        ></a>
+        <a
+          class="slider_control slider_control_next"
+          href="#"
+          role="button"
+        ></a>
+      </div>
+      <main class="main">
+        <section class="about-us container">
+          <div>
+            <h2 class="about-us__title">Про нас</h2>
+            <p class="about-us__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+              corrupti a corporis, assumenda cum aliquam laudantium nostrum,
+              consequatur debitis praesentium ullam, labore omnis animi eveniet
+              ipsum maxime tempore. In,Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Eius corrupti a corporis, assumenda cum aliquam
+              laudantium nostrum, consequatur debitis praesentium ullam, labore
+              omnis animi eveniet ipsum maxime tempore. In,Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Eius corrupti a corporis,
+              assumenda cum aliquam laudantium nostrum, consequatur debitis
+              praesentium ullam, labore omnis animi eveniet ipsum maxime
+              tempore. In,
+            </p>
+          </div>
+        </section>
+
+        <section id="anim_block" class="our-team container slideUp">
+          <h2 class="about-us__title">Наша команда</h2>
+          <ul class="team-list">
+            <li class="team-list__item">
+              <img
+                src="./img/B1.png"
+                class="team-list__iteam__img"
+                alt="people"
+              />
+              <h3 class="team-list__item__name">Максимюк Іван</h3>
+              <h4 class="team-list__item__function">Головний Інженер</h4>
+              <div class="icon">
+                <a href="#" class="icon-item icon-item--blue">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--azure">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--black">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+            <li class="team-list__item">
+              <img
+                src="./img/B2.png"
+                class="team-list__iteam__img"
+                alt="people"
+              />
+              <h3 class="team-list__item__name">Гнеп Роман</h3>
+              <h4 class="team-list__item__function">Архітектор</h4>
+              <div class="icon">
+                <a href="#" class="icon-item icon-item--blue">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--azure">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--black">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+            <li class="team-list__item">
+              <img
+                src="./img/B3.png"
+                class="team-list__iteam__img"
+                alt="people"
+              />
+              <h3 class="team-list__item__name">Яловега Віктор</h3>
+              <h4 class="team-list__item__function">Дизайнер</h4>
+              <div class="icon">
+                <a href="#" class="icon-item icon-item--blue">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--azure">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--black">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+            <li class="team-list__item">
+              <img
+                src="./img/B4.png"
+                class="team-list__iteam__img"
+                alt="people"
+              />
+              <h3 class="team-list__item__name">Стефаненко Іра</h3>
+              <h4 class="team-list__item__function">Менеджер</h4>
+              <div class="icon">
+                <a href="#" class="icon-item icon-item--blue">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--azure">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-item icon-item--black">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="service container">
+          <h2 class="about-us__title">Наші послуги</h2>
+          <ul class="service__list">
+            <li class="article-list__item icon-1">
+              <h3 class="artc-text">Новобудови</h3>
+              <p class="text-descr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                doloremque ea earum et autem nesciunt veniam sapiente incidunt
+                ipsa dolores!
+              </p>
+            </li>
+            <li class="article-list__item icon-2">
+              <h3 class="artc-text">Приватні будинки</h3>
+              <p class="text-descr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                doloremque ea earum et autem nesciunt veniam sapiente incidunt
+                ipsa dolores!
+              </p>
+            </li>
+            <li class="article-list__item icon-3">
+              <h3 class="artc-text">Квартири</h3>
+              <p class="text-descr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                doloremque ea earum et autem nesciunt veniam sapiente incidunt
+                ipsa dolores!
+              </p>
+            </li>
+            <li class="article-list__item icon-4">
+              <h3 class="artc-text">Ремонти</h3>
+              <p class="text-descr">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
+                doloremque ea earum et autem nesciunt veniam sapiente incidunt
+                ipsa dolores!
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <section>
+          <div>
+            <a href="#" class="header__logo header__logo--white">bigbuilding</a>
+            <p class="footer__text-box1">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam
+              officia facilis modi quos accusamus beatae!
+            </p>
+          </div>
+
+          <div class="icon icon-footer">
+            <a href="#" class="icon-item icon-item--blue">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="icon-item icon-item--azure">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="icon-item icon-item--black">
+              <i class="fa fa-google-plus" aria-hidden="true"></i>
+            </a>
+          </div>
+        </section>
+        <div>
+          <div class="footer-table">
+            <section class="footer__blog">
+              <h2 class="footer__blog__title">Blog</h2>
+              <div class="footer__position1">
+                <img src="./img/city1.jpg" alt="" class="footer__blog__img" />
+                <div>
+                  <h3 class="footer__blog__text">
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                  </h3>
+                  <div class="footer__position2">
+                    <div class="footer__position__end">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Feb. 07, 2018</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-address-book" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Admin</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-list-alt" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">11</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__position1">
+                <img src="./img/city2.jpg" alt="" class="footer__blog__img" />
+                <div>
+                  <h3 class="footer__blog__text">
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                  </h3>
+                  <div class="footer__position2">
+                    <div class="footer__position__end">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Jun. 22, 2018</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-address-book" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Admin</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-list-alt" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">21</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="footer__blog">
+              <h2 class="footer__blog__title">Blog</h2>
+              <div class="footer__position1">
+                <img src="./img/city3.jpg" alt="" class="footer__blog__img" />
+                <div>
+                  <h3 class="footer__blog__text">
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                  </h3>
+                  <div class="footer__position2">
+                    <div class="footer__position__end">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Feb. 17, 2018</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-address-book" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Admin</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-list-alt" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">14</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__position1">
+                <img src="./img/city4.jpg" alt="" class="footer__blog__img" />
+                <div>
+                  <h3 class="footer__blog__text">
+                    Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet.
+                  </h3>
+                  <div class="footer__position2">
+                    <div class="footer__position__end">
+                      <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Jun. 18, 2018</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-address-book" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">Admin</p>
+                    </div>
+                    <div class="footer__position__end">
+                      <i class="fa fa-list-alt" aria-hidden="true"></i>
+                      <p class="footer__blog__text__info">21</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <form class="transparent">
+              <div class="form-inner">
+                <h3>Реєстрація</h3>
+                <label for="username">Імя користувача</label>
+                <input type="text" id="username" />
+                <label for="password">Пароль</label>
+                <input id="password" type="password" />
+                <input type="checkbox" id="custom-checkbox" />
+                <label for="custom-checkbox">Запам'ятати мене</label>
+                <input type="submit" value="Відправити" />
+              </div>
+            </form>
+          </div>
+
+          <section class="contacts-info">
+            <p>+380 (95) 137 94 26</p>
+            <p>м. Чернівці | вул. Головна 11</p>
+            <p>bigbuilding@gmail.com</p>
+          </section>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/libs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/slider.js"></script>
+  </body>
+</html>

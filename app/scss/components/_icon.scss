@@ -1,0 +1,29 @@
+.icon {
+  display: flex;
+}
+
+.fa {
+  font-size: 2rem;
+}
+
+.icon-item {
+  display: block;
+  margin-right: 1rem;
+  border-radius: 15px;
+}
+
+.icon-item:last-child {
+  margin: 0;
+}
+
+.icon-item--blue {
+  color: #3b5998;
+}
+
+.icon-item--azure {
+  color: #1dcaff;
+}
+
+.icon-item--black {
+  color: #dd4b39;
+}

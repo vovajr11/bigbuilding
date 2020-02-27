@@ -1,0 +1,28 @@
+.team-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.team-list__item {
+  border-radius: 10px 10px 10px 10px;
+  text-transform: uppercase;
+}
+
+.team-list__iteam__img {
+  border-radius: 200px 200px 200px 200px;
+  margin-bottom: 1rem;
+}
+
+.team-list__item__name {
+  color: #111;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.team-list__item__function {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  margin-top: 0.25rem;
+}

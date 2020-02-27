@@ -1,0 +1,51 @@
+.service__list {
+  padding: 0 5px;
+}
+
+.article-list__item {
+  list-style: none;
+  text-align: center;
+}
+
+.artc-text {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.text-descr {
+  font-size: 1.5rem;
+}
+
+/* 
+  =======ICO=======
+  */
+.article-list__item::before {
+  content: "";
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 3px solid #fed136;
+  border-radius: 20%;
+  transition: 1s;
+}
+
+.icon-1::before {
+  background-image: url(../img/Construction.png);
+  background-size: contain;
+}
+.icon-2::before {
+  background-image: url(../img/Design.png);
+  background-size: contain;
+}
+.icon-3::before {
+  background-image: url(../img/House.png);
+  background-size: contain;
+}
+.icon-4::before {
+  background-image: url(../img/Painting.png);
+  background-size: contain;
+}
